@@ -7,9 +7,9 @@ namespace DailyChefTj.Models
 {
     public class Ingrediente
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public Proveedor Proveedor { get; set; }
+        virtual public int Id { get; set; }
+        virtual public string Nombre { get; set; }
+        virtual public Proveedor Proveedor { get; set; }
        
     }
 }

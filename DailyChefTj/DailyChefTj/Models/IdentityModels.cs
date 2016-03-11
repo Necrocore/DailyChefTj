@@ -29,5 +29,11 @@ namespace DailyChefTj.Models
         {
             return new ApplicationDbContext();
         }
+
+        virtual public DbSet<Ingrediente> Ingredientes { get; set; }
+
+        virtual public DbSet<Chef> Chefs { get; set; }
+
+        virtual public DbSet<Direccion> Direccions { get; set; }
     }
 }

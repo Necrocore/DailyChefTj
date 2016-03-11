@@ -13,6 +13,5 @@ namespace DailyChefTj.Models
         public string Calle { get; set; }
         public int CodigoPostal { get; set; }
         public string Fraccionamiento { get; set; }
-        public Image GoogleMaps { get; set; }
     }
 }
