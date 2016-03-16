@@ -9,7 +9,7 @@ namespace DailyChefTj.Models
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
         public List<Medidas> Medidas { get; set; }
-        public Rol Rol { get; set; }
+        public Cargo Rol { get; set; }
         public MetodoPago MetodoPago { get; set; }
         public List<Ingrediente> IngredientesNoDeseados { get; set; }
         public List<Ingrediente> Alergias { get; set; }

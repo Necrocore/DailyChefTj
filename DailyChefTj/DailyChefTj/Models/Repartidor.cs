@@ -11,6 +11,6 @@ namespace DailyChefTj.Models
         public string Nombre { get; set; }
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
-        public Rol Rol { get; set; }
+        public Cargo Rol { get; set; }
     }
 }

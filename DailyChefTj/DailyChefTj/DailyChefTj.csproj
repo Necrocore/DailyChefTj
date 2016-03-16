@@ -77,6 +77,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -197,16 +205,14 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChefsController.cs" />
-    <Compile Include="Controllers\DireccionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IngredientesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201603111227076_inicio.cs" />
-    <Compile Include="Migrations\201603111227076_inicio.Designer.cs">
-      <DependentUpon>201603111227076_inicio.cs</DependentUpon>
+    <Compile Include="Migrations\201603140203584_ArranqueInicial.cs" />
+    <Compile Include="Migrations\201603140203584_ArranqueInicial.Designer.cs">
+      <DependentUpon>201603140203584_ArranqueInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -219,9 +225,8 @@
     <Compile Include="Models\MetodoPago.cs" />
     <Compile Include="Models\Nutriologo.cs" />
     <Compile Include="Models\Platillo.cs" />
-    <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Models\Repartidor.cs" />
-    <Compile Include="Models\Rol.cs" />
+    <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -264,9 +269,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -287,6 +289,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Chefs\Create.cshtml" />
+    <Content Include="Views\Chefs\Delete.cshtml" />
+    <Content Include="Views\Chefs\Details.cshtml" />
+    <Content Include="Views\Chefs\Edit.cshtml" />
+    <Content Include="Views\Chefs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -300,8 +307,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603111227076_inicio.resx">
-      <DependentUpon>201603111227076_inicio.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603140203584_ArranqueInicial.resx">
+      <DependentUpon>201603140203584_ArranqueInicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

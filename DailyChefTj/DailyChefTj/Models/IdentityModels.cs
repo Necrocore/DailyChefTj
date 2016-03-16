@@ -34,6 +34,17 @@ namespace DailyChefTj.Models
 
         virtual public DbSet<Chef> Chefs { get; set; }
 
-        virtual public DbSet<Direccion> Direccions { get; set; }
+        virtual public DbSet<Direccion> Direcciones { get; set; }
+
+        virtual public DbSet<Medidas> Medidas { get; set; }
+
+        virtual public DbSet<Nutriologo> Nutriologos { get; set; }
+
+        virtual public DbSet<Platillo> Platillos { get; set; }
+
+        virtual public DbSet<Cargo> Cargo { get; set; }
+
+        virtual public DbSet<Venta> Ventas { get; set; }
+
     }
 }

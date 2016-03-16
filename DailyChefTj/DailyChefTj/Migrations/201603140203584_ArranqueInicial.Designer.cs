@@ -7,13 +7,13 @@ namespace DailyChefTj.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class inicio : IMigrationMetadata
+    public sealed partial class ArranqueInicial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inicio));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ArranqueInicial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201603111227076_inicio"; }
+            get { return "201603140203584_ArranqueInicial"; }
         }
         
         string IMigrationMetadata.Source

@@ -12,7 +12,7 @@ namespace DailyChefTj.Models
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
         public string Telefono { get; set; }
-        public Rol Rol { get; set; }
+        public Cargo Rol { get; set; }
         public List<Usuario> Paciente { get; set; }
     }
 }
